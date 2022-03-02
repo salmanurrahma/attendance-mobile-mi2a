@@ -1,0 +1,42 @@
+# Salma Nur Rahma #
+# Resume 3 #
+Konsep Basic Flutter Layout
+
+Flutter sangat berbeda dengan framework lainnya karena UI dibangun dengan menggunakan kode, tidak seperti XML ataupun yang lainnya. Widget adalah hal penting saat menggunakan UI di Flutter.
+Baris dan kolom
+
+Row dan Coloumn adalah kelas yang digunakan untuk meletakkan isi widget dan dapat disebut Child kemudian Row dan Coloumn adalah parent dari widget tersebut. Row diletakkan secara horizontan dan Coloumn meletakkan widgetnya secara vertikal
+
+Axis size and alignment
+Row dan Coloumn menempati MainAxis yang berbeda. Maka diperlukan mainAxisSize untuk menentukan banyaknya ruang pada Row dan Coloumn. Pada MainAxisSize terdapat dua nilai :
+
+MainAxisSize.max
+Row dan Column akan menempati semua ruang pada mainAxis nya
+
+MainAxisSize.min
+Row dan Column hanya akan menempati ruang yang cukup pada mainAxis nya.
+Flexible Widget
+Di bawah ini adalah deskripsi argumen yang dapat Kita berikan pada constructor.
+
+Key key: Tombol widget, digunakan untuk mengontrol apakah harus diganti.
+
+int flex: Faktor fleksibel untuk child.
+FlexFit fit: Bagaimana child itu ditorehkan ke dalam ruang yang tersedia. Default-nya adalah FlexFit.loose.
+
+Widget child *: Widget di bawah widget ini di pohon.
+flex adalah properti penting di sini. Ini menentukan faktor fleksibel yang memengaruhi ukuran child.
+
+FlexFit.loose
+
+akan memaksimalkan ukuran defaul nya
+
+FlexFit.tight akan merubah size terserah
+
+Expanded Widget
+Expanded Widget merupakan sebuah widget yang memperluas anak dari Row, Column atau flex sehingga mengisi ruang yang tersedia. Dengan menggunakan expanded widget, membuat children dari Row, Column dan flex meluas untuk mengisi ruang yang tersedia di sepanjang sumbu utama semisal horizontal maupun vertical
+
+SizedBox
+SizedBox. yaitu untuk membuat box, widget ini biasanya digunakan untuk menambahkan jarak baik secara vertikal atau horizontal tergantung property yang kita atur
+
+icon widget
+Icon widget yaitu untuk membuat sebuah icon yang dimana bisa ditaruh di child maupun children dan juga bisa di decoration
